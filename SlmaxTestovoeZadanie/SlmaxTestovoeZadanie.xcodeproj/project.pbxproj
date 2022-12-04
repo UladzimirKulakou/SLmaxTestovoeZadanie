@@ -13,6 +13,7 @@
 		E7AFBEE6293D22A400D8B904 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7AFBEE5293D22A400D8B904 /* Preview Assets.xcassets */; };
 		E7AFBEE8293D22A400D8B904 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AFBEE7293D22A400D8B904 /* Persistence.swift */; };
 		E7AFBEEB293D22A400D8B904 /* SlmaxTestovoeZadanie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E7AFBEE9293D22A400D8B904 /* SlmaxTestovoeZadanie.xcdatamodeld */; };
+		E7AFBEF2293D2C1800D8B904 /* MainBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AFBEF1293D2C1800D8B904 /* MainBoard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		E7AFBEE5293D22A400D8B904 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E7AFBEE7293D22A400D8B904 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		E7AFBEEA293D22A400D8B904 /* SlmaxTestovoeZadanie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SlmaxTestovoeZadanie.xcdatamodel; sourceTree = "<group>"; };
+		E7AFBEF1293D2C1800D8B904 /* MainBoard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainBoard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				E7AFBEE7293D22A400D8B904 /* Persistence.swift */,
 				E7AFBEE9293D22A400D8B904 /* SlmaxTestovoeZadanie.xcdatamodeld */,
 				E7AFBEE4293D22A400D8B904 /* Preview Content */,
+				E7AFBEF1293D2C1800D8B904 /* MainBoard.swift */,
 			);
 			path = SlmaxTestovoeZadanie;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7AFBEF2293D2C1800D8B904 /* MainBoard.swift in Sources */,
 				E7AFBEE8293D22A400D8B904 /* Persistence.swift in Sources */,
 				E7AFBEEB293D22A400D8B904 /* SlmaxTestovoeZadanie.xcdatamodeld in Sources */,
 				E7AFBEE1293D22A200D8B904 /* ContentView.swift in Sources */,

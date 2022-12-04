@@ -9,7 +9,10 @@ import SwiftUI
 
 struct MainBoard: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            Image("Rectangle 5")
+            Image("Rectangle 4")
+        }
     }
 }
 
