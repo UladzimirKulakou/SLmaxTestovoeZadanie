@@ -11,25 +11,47 @@ import SwiftUI
 
 struct CreateNewTask: View {
 
-    @State private var username: String = ""
-    @State private var password: String = ""
-
+    @State private var header: String = ""
+    @State private var content: String = ""
+    @Environment(\.managedObjectContext) private var viewContext
+    
+    @FetchRequest(entity: Note.entity(), sortDescriptors: [NSSortDescriptor(key: "date", ascending: false)]) private var allNotes: FetchedResults<Note>
+    
+    @ObservedObject var textBindingManager = TextBindingManager(limit: 25)
+ 
+    private func saveTask() {
+        
+        do {
+            let note = Note(context: viewContext)
+            note.header = textBindingManager.text
+            note.content = content
+            note.date = Date()
+            try viewContext.save()
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+    
+    
     var body: some View {
         VStack {
-            TextField(text: $username) {
+            
+            TextField(text: $textBindingManager.text) {
                 Text("Название")
                     .font(.custom("Raleway-SemiBold", fixedSize: 14))
                     .foregroundColor(Color.black)
             }
             Divider()
             HStack {
-                TextField(text: $password) {
+                TextField(text: $content) {
                     Text("Текст описание")
-                        .font(.custom("Raleway-SemiBold", fixedSize: 10))
-                        .multilineTextAlignment(.leading)
-                        .lineLimit(0)
+                        .font(.custom("Raleway-Light", fixedSize: 10))
+                      //  .multilineTextAlignment(.leading)
+                        .foregroundColor(Color.black)
+//                        .lineLimit(nil)
                 }
                 Button(action: {
+                    saveTask()
                 }) {
                     Image("Vector")
                 }

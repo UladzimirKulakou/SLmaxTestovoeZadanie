@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E79BB3BB293E665200974B78 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E79BB3BA293E665200974B78 /* Raleway-Light.ttf */; };
+		E79BB3BE293E788900974B78 /* TextBindingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79BB3BD293E788900974B78 /* TextBindingManager.swift */; };
 		E7AFBEDF293D22A200D8B904 /* SlmaxTestovoeZadanieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AFBEDE293D22A200D8B904 /* SlmaxTestovoeZadanieApp.swift */; };
 		E7AFBEE1293D22A200D8B904 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AFBEE0293D22A200D8B904 /* ContentView.swift */; };
 		E7AFBEE3293D22A400D8B904 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7AFBEE2293D22A400D8B904 /* Assets.xcassets */; };
@@ -18,9 +20,12 @@
 		E7AFBEF8293D3A7300D8B904 /* CreateNewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AFBEF7293D3A7300D8B904 /* CreateNewTask.swift */; };
 		E7AFBEFA293D4A8700D8B904 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AFBEF9293D4A8700D8B904 /* Task.swift */; };
 		E7AFBEFC293D4FC100D8B904 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AFBEFB293D4FC100D8B904 /* MainScreen.swift */; };
+		E7B02A1A29410B3B00B4FBB0 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B02A1929410B3B00B4FBB0 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E79BB3BA293E665200974B78 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		E79BB3BD293E788900974B78 /* TextBindingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBindingManager.swift; sourceTree = "<group>"; };
 		E7AFBEDB293D22A200D8B904 /* SlmaxTestovoeZadanie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlmaxTestovoeZadanie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7AFBEDE293D22A200D8B904 /* SlmaxTestovoeZadanieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlmaxTestovoeZadanieApp.swift; sourceTree = "<group>"; };
 		E7AFBEE0293D22A200D8B904 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +39,7 @@
 		E7AFBEF7293D3A7300D8B904 /* CreateNewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewTask.swift; sourceTree = "<group>"; };
 		E7AFBEF9293D4A8700D8B904 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		E7AFBEFB293D4FC100D8B904 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		E7B02A1929410B3B00B4FBB0 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E79BB3BC293E785C00974B78 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E79BB3BD293E788900974B78 /* TextBindingManager.swift */,
+				E7B02A1929410B3B00B4FBB0 /* CoreDataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		E7AFBED2293D22A200D8B904 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +81,7 @@
 		E7AFBEDD293D22A200D8B904 /* SlmaxTestovoeZadanie */ = {
 			isa = PBXGroup;
 			children = (
+				E79BB3BC293E785C00974B78 /* Managers */,
 				E7AFBEF6293D389600D8B904 /* Info.plist */,
 				E7AFBEDE293D22A200D8B904 /* SlmaxTestovoeZadanieApp.swift */,
 				E7AFBEE0293D22A200D8B904 /* ContentView.swift */,
@@ -91,6 +107,7 @@
 		E7AFBEF3293D37F700D8B904 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				E79BB3BA293E665200974B78 /* Raleway-Light.ttf */,
 				E7AFBEF4293D384B00D8B904 /* Raleway-SemiBold.ttf */,
 			);
 			path = Fonts;
@@ -167,6 +184,7 @@
 				E7AFBEF5293D384B00D8B904 /* Raleway-SemiBold.ttf in Resources */,
 				E7AFBEE6293D22A400D8B904 /* Preview Assets.xcassets in Resources */,
 				E7AFBEE3293D22A400D8B904 /* Assets.xcassets in Resources */,
+				E79BB3BB293E665200974B78 /* Raleway-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E79BB3BE293E788900974B78 /* TextBindingManager.swift in Sources */,
 				E7AFBEFC293D4FC100D8B904 /* MainScreen.swift in Sources */,
 				E7AFBEF2293D2C1800D8B904 /* TopScreenImage.swift in Sources */,
 				E7AFBEF8293D3A7300D8B904 /* CreateNewTask.swift in Sources */,
@@ -184,6 +203,7 @@
 				E7AFBEEB293D22A400D8B904 /* SlmaxTestovoeZadanie.xcdatamodeld in Sources */,
 				E7AFBEE1293D22A200D8B904 /* ContentView.swift in Sources */,
 				E7AFBEFA293D4A8700D8B904 /* Task.swift in Sources */,
+				E7B02A1A29410B3B00B4FBB0 /* CoreDataManager.swift in Sources */,
 				E7AFBEDF293D22A200D8B904 /* SlmaxTestovoeZadanieApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
