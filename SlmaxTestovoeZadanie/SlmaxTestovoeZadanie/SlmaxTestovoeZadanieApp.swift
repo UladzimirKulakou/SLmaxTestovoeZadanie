@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct SlmaxTestovoeZadanieApp: App {
-    let persistenceController = PersistenceController.shared
+    let persistenceController = CoreDataManager.shared.persistentConteiner
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+           MainScreen()
+                .environment(\.managedObjectContext, persistenceController.viewContext)
         }
     }
 }
